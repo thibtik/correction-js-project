@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 34px;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(228, 152, 202);
+}
+#start{
+  background-color: rgb(178, 245, 176);
+  padding: 13px;
+  width: 15%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 3%;
+  cursor: pointer;
+
+}

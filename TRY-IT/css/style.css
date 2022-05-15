@@ -1,0 +1,136 @@
+:root {
+  --main-color: #750579;
+  --main-color-light: rgb(175, 157, 157);
+  --grey-color: #b6b6b6;
+}
+
+/* --------------- COMMON STYLE   ------------------------------------   */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  background-color: var(--main-color);
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: var(--grey-color);
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+.button:hover {
+  border: 1px solid rgb(15, 15, 15);
+  background-color: rgb(233, 233, 233);
+}
+
+/* --------------- PLAY VIEW    --------------------- ---------------   */
+
+#play-view {
+  background-color: var(--main-color-light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#start {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 300%;
+  cursor: pointer;
+}
+
+#quiz {
+  width: 50%;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#choices {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------- EDIT VIEW STYLE   ---------------   */
+#questions-view {
+  background-color: var(--main-color-light);
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+#edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+
+  border: 1px solid var(--main-color-light);
+  background-color: white;
+  border-radius: 15px;
+}
+
+.question-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+}
+.actions img {
+  width: 30%;
+}
